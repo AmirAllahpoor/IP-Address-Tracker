@@ -36,7 +36,7 @@ const PrimaryPage = () => {
 
     return ( 
         <div className="maindiv">
-            <div className="headertracker bg-[url('./src/assets/pattern-bg-desktop.png')] w-full h-64  bg-cover bg-no-repeat bg-center">
+            <div className="headertracker bg-[#6922da] w-full h-64 bg-cover bg-no-repeat bg-center">
             <div className="textheader flex flex-row justify-center ">
                 <h1 className="font-sans text-3xl text-white font-medium mt-5 sm:text-2xl">IP Address Tracker</h1>     
             </div>
