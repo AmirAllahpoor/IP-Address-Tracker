@@ -36,7 +36,7 @@ const PrimaryPage = () => {
 
     return ( 
         <div className="maindiv">
-            <div className="headertracker bg-bgprimary w-full h-64  bg-cover bg-no-repeat bg-center">
+            <div className="headertracker bg-[url('./src/assets/pattern-bg-desktop.png')] w-full h-64  bg-cover bg-no-repeat bg-center">
             <div className="textheader flex flex-row justify-center ">
                 <h1 className="font-sans text-3xl text-white font-medium mt-5 sm:text-2xl">IP Address Tracker</h1>     
             </div>
@@ -51,7 +51,7 @@ const PrimaryPage = () => {
                 address && (
                     <div className="centerboxinfo z-50 flex  flex-row justify-center">
                 <div className="boxinfo shadow z-40 shadow-slate-300 bg-white w-3/4 mt-12 sm:w-5/6 sm:h-80 md:w-5/6 h-36 md:h-40 rounded-2xl flex sm:flex-col flex-row justify-center">
-                    <div className="boxininfo w-full sm:h-full sm:pt-4 sm:pb-4 sm:pr-7 sm:pt-0 pl-8 pr-5 pt-9 flex sm:flex-col flex-row justify-around">
+                    <div className="boxininfo w-full sm:h-full sm:pb-4 sm:pr-7 sm:pt-0 pl-8 pr-5 pt-9 flex sm:flex-col flex-row justify-around">
                     <div className="boxtext1  sm:text-center">
                         <div className="category1">
                             <p className="font-sans font-bold text-xs uppercase text-gray-500">ip address</p>

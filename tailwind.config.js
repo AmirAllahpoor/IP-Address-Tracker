@@ -8,9 +8,7 @@ export default {
       "sm" : {"min" : '320px' , "max" : "450px"},
     },
     extend: {
-      backgroundImage: {
-        'bgprimary': "url('./src/assets/pattern-bg-desktop.png')",
-      }
+
     },
   },
   plugins: [],
