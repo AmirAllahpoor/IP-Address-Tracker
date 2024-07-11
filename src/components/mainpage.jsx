@@ -7,7 +7,7 @@ import MarkerPosition from "./markerposition"
 
 const PrimaryPage = () => {
 
-    const REACT_APP_API_KEY = "at_6EA8c3dXrKXYShp4vEyvkcvxgDnMU"
+    const REACT_APP_API_KEY = "at_mWunueL5G3phAlGjTNhd6W1Xmeu1K"
     const [address , setAddress] = useState(null)
     const [ipAddress , setIpAddress] = useState('')
 
