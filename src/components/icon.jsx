@@ -1,5 +1,5 @@
 import L from "leaflet"
-import icon from "../assets/icon-location.svg"
+import icon from "../../public/icon-location.svg"
 
 export default L.icon({
     iconSize : [32 , 40],

@@ -1,4 +1,4 @@
-import imgarrow from "../assets/icon-arrow.svg"
+import imgarrow from "../../public/icon-arrow.svg"
 import { MapContainer, TileLayer  } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 import { useState , useEffect } from "react"
@@ -14,7 +14,7 @@ const PrimaryPage = () => {
     useEffect(() => {
         try{
             const getdata = async () => {
-                const res = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${REACT_APP_API_KEY}&ipAddress=1.0.0.1`)
+                const res = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${REACT_APP_API_KEY}&ipAddress=8.8.8.8`)
                 setAddress(res.data)
             }
             getdata()
@@ -36,7 +36,7 @@ const PrimaryPage = () => {
 
     return ( 
         <div className="maindiv">
-            <div className="headertracker bg-[#6922da] w-full h-64 bg-cover bg-no-repeat bg-center">
+            <div className="headertracker bg-[url('/bgdesktop.png')] bg-cover w-full h-64">
             <div className="textheader flex flex-row justify-center ">
                 <h1 className="font-sans text-3xl text-white font-medium mt-5 sm:text-2xl">IP Address Tracker</h1>     
             </div>
@@ -95,7 +95,7 @@ const PrimaryPage = () => {
             </div>
             {
                 address && (
-            <MapContainer center={[address.location.lat , address.location.lng]} zoom={13} scrollWheelZoom={true} className="h-screen z-20 mt-0 w-full">
+            <MapContainer zoomControl={false} center={[address.location.lat , address.location.lng]} zoom={13} scrollWheelZoom={true} className="h-screen z-20 mt-0 w-full">
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
